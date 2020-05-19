@@ -72,7 +72,7 @@
 (setq make-backup-files nil) ; stop creating backup~ files
 
 ;; invoke the AUCTeX package (LaTeX support)
-(require 'tex-site)
+;; (require 'tex-site)
 
 ;; set font
 (set-face-attribute 'default nil :height 170)
