@@ -216,4 +216,3 @@ dependencies:
     - vizseq==0.1.11
     - wasabi==0.6.0
     - yapf==0.29.0
-prefix: /scratch/arka/miniconda3/envs/railgun

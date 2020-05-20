@@ -1,0 +1,1 @@
+alias nsm='nvidia-smi'
