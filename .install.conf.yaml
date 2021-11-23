@@ -5,9 +5,17 @@
 - clean: ['~', '~/.config']
 
 - link:
+    # ~/.emacs.d: 'emacs/emacs.d'
     ~/.emacs: 'emacs/.emacs'
     ~/.bash_user: 'bash/.bash_user'
     ~/.bash_aliases: 'bash/.bash_aliases'
     ~/.gitconfig: 'git/.gitconfig'
     ~/.config/flake8: 'flake8/flake8'
     ~/.screenrc: 'screen/.screenrc'
+
+# - shell:
+#   - git submodule sync --recursive
+#   - git update-submodules
+#   - >
+#     git cleanall -f
+#     emacs/emacs.d
