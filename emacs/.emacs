@@ -17,12 +17,12 @@
     elpy
     flycheck
     material-theme
-    py-autopep8))
+))
 
-(mapc #'(lambda (package)
-    (unless (package-installed-p package)
-      (package-install package)))
-      myPackages)
+;; (mapc #'(lambda (package)
+;;    (unless (package-installed-p package)
+;;      (package-install package)))
+;;     myPackages)
 
 ;; BASIC CUSTOMIZATION
 ;; --------------------------------------
@@ -48,8 +48,8 @@
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 ;; enable autopep8 formatting on save
-(require 'py-autopep8)
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+;;(require 'py-autopep8)
+;; (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 ;; init.el ends here
 
