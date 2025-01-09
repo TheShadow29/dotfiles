@@ -19,10 +19,10 @@
     material-theme
 ))
 
-;; (mapc #'(lambda (package)
-;;    (unless (package-installed-p package)
-;;      (package-install package)))
-;;     myPackages)
+(mapc #'(lambda (package)
+   (unless (package-installed-p package)
+     (package-install package)))
+    myPackages)
 
 ;; BASIC CUSTOMIZATION
 ;; --------------------------------------
@@ -87,8 +87,7 @@
  ;; If there is more than one, they won't work right.
  '(magit-dispatch-arguments nil)
  '(package-selected-packages
-   (quote
-    (auto-complete-auctex auctex pylint comment-dwim-2 magit py-autopep8 material-theme flycheck elpy better-defaults))))
+   '(auto-complete-auctex auctex pylint comment-dwim-2 magit py-autopep8 material-theme flycheck elpy better-defaults)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
